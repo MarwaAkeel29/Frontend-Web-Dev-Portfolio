@@ -1,57 +1,32 @@
-# HTML & CSS – Chapter 1 Project  
-## Recipe Page & Bonus Quick-Reference Guide
+# Hello, I'm Marwa Akeel 👋
 
----
+Welcome to my GitHub profile! I'm excited to share my journey as I grow my skills and work on projects that inspire me. Here's a little about me:
 
-## 📄 Project Summary
+🔭 **I’m currently working on:**
+- Building my career and enhancing my professional skills 😄
+- Exploring projects that combine creativity and technology
 
-This submission showcases the completed work for **Chapter 1** of the *Web Development* module. It comprises two components:
+💻 **Featured Projects:**
+- **Al Tayer Motors Website Clone:** [View Live Site](https://marwaakeel29.github.io/) | Designed and developed a responsive front-end interface using HTML, CSS, and JS.
+- **Python Tkinter GUI Collection:** [View Repository](https://github.com/marwaakeel29/Python-Tkinter-GUI-Collection) | A suite of three interactive desktop apps (Space Math Game, Joke Terminal, Student CRUD Manager) built with Python.
+- **Zero-Knowledge Password Vault:** [View Repository](https://github.com/marwaakeel29/Zero-Knowledge-Password-Vault) | A highly secure, offline password manager utilizing PBKDF2 hashing and AES-256 data encryption.
+- **Vending Machine Simulator:** [View Repository](https://github.com/marwaakeel29/Vending-Machine-Python) | A rule-based Python application designed to simulate state management and transaction processing.
 
-- **Core Project** – A fully styled **Recipe Webpage** demonstrating foundational HTML and CSS.
-- **Bonus Challenge** – A visually engaging **Quick-Reference Guide** to essential HTML & CSS elements.
+🌱 **I’m currently learning:**
+- Cybersecurity at Bath Spa University, with a heavy focus on ethical hacking, secure coding, network security, and digital forensics.
 
----
+💬 **About Me:**
+- I’m originally from India, but I was born and raised in the UAE.
+- I love staying busy with creative activities, which is where I feel most inspired.
 
-## 🍽️ Part One: The Recipe Page
+⚡ **Fun Fact:**
+- I'm a multifaceted individual with a knack for creativity and problem-solving! 
+- My interests outside of tech span:
+  - 🖋️ Calligraphy
+  - 🎨 Drawing
+  - 🍰 Baking
+  - 🔨 Engraving
+  - 📖 Exploring new courses and skills (latest included!)
 
-The goal of this task was to construct a simple yet functional web page featuring a recipe, using only core HTML and CSS.
-
-### 🔧 Key Features Implemented:
-
-- A clearly defined page title and a prominent `<h1>` heading.  
-- A brief introduction crafted with paragraph tags.  
-- A representative image of the dish using the `<img>` element.  
-- A bullet-point list of ingredients (`<ul>`).  
-- A numbered list of cooking steps (`<ol>`).  
-- An external link to a print recipe page, implemented via the `<a>` tag.  
-- Custom CSS styling applied for visual appeal (color schemes, fonts, spacing, etc.).  
-- Commented HTML & CSS code for clarity and maintainability.
-
-### ✨ Enhancements and Creative Elements:
-
-- A centered CSS container box to neatly frame the page content.  
-- Carefully selected **Google Fonts** to complement the culinary theme.  
-- A stylized print button for printing recipe.  
-- Subtle **hover effects** to add interactivity to the image element.
-
-> 💡 *This project offered a solid foundation in web structuring and basic aesthetic control using CSS.*
-
----
-
-## 📚 Part Two: HTML & CSS Quick-Reference Guide (Bonus Project)
-
-As an extension of the chapter, I designed a beginner-friendly **Quick-Reference Guide** that introduces core HTML tags and CSS properties in a visually organized and engaging format.
-
-### 🧩 Highlights of the Guide:
-
-- Semantic HTML structure, including clearly sectioned elements for easy scanning.  
-- Accessible, imaginative definitions that are both informative and memorable.  
-- Thematic, creative examples for each tag  
-  (e.g., anchor tags leading to nature-related sites, `<img>` examples with fantasy creatures).  
-- A **color-coded card layout**, designed with CSS for readability and responsiveness.  
-- **Mobile-friendly design** ensuring accessibility across devices. 
-
-> 🧠 *This guide serves as both a revision tool and a creative showcase of how HTML & CSS can be presented in a clean, engaging manner.*
-
----
-
+📫 **Connect with Me:**
+- **Email:** [marwaakeel2020@gmail.com](mailto:marwaakeel2020@gmail.com)
