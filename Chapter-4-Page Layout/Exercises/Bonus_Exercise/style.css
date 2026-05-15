@@ -1,0 +1,330 @@
+/* === Global Styles === */
+body {
+    background: linear-gradient(to bottom, #0A0F1E, #101D2C, #192B3B); /* Background gradient */
+    font-family: 'Exo 2', sans-serif; /* Futuristic font */
+}
+
+/* === Sidebar === */
+.sidebar {
+    background: linear-gradient(to top, #162A38, #101D2C, #0A0F1E); /* Sidebar gradient */
+    box-shadow: 0px 10px 10px #5DA9E9; /* Glowing shadow */
+    height: 100%; /* Full height */
+    width: 230px; /* Fixed width */
+    position: fixed; /* Sticks to side */
+    padding-top: 20px; /* Space at top */
+    transition: 0.3s; /* Smooth open/close */
+    top: 0; left: 0; /* Anchored to top-left */
+}
+
+.sidebar h2 {
+    color: white; /* White title */
+    padding-left: 15px; /* Left spacing */
+}
+
+.sidebar ul {
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
+}
+
+.sidebar ul li {
+    margin: 15px 0; /* Vertical spacing */
+    padding: 15px 10px 0 10px; /* Inner padding */
+    font-size: 1.2rem; /* Slightly larger */
+}
+
+.sidebar ul li a {
+    padding: 10px 20px; /* Button feel */
+    text-transform: uppercase; /* All caps */
+    text-decoration: none; /* No underline */
+    border-bottom: 1px solid #5DA9E9; /* Glowing line */
+    font-size: 18px; font-weight: 500; color: #fff; /* Text style */
+    background: transparent; /* Clear background */
+    cursor: pointer; /* Clickable */
+    transition: 0.5s ease; /* Smooth hover */
+    user-select: none; /* No text highlight */
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+   color: #ffffff;
+   background: #5DA9E9; /* Light up background */
+   border-radius: 50px 0; /* Rounded edge */
+   text-shadow:  /* Glow text */
+   0 0 5px #ffffff,
+   0 0 10px #ffffff;
+   box-shadow:  /* Glow box */
+   0 0 5px #5DA9E9,
+   0 0 20px #5DA9E9,
+   0 0 50px #5DA9E9;
+}
+
+/* Active/Clicked Effect */
+.sidebar ul li a:active {
+    background-color: #CBD2D9; /* Click effect */
+    color: #101820; /* Dark text for contrast */
+}
+
+h1, h2, .site-footer p {
+    font-family: cursive; /* Themed font */
+    font-size: 40px; /* Large text */
+    color: #fff; /* White color */
+    text-shadow:  /* Intense glow */
+    0 0 7px #fff,
+    0 0 42px #5DA9E9,
+    0 0 77px #5DA9E9;
+}
+
+h2{
+    font-family: cursive;
+    font-size: 20px; /* Medium heading */
+    color: #fff; /* White */
+}
+
+h3 {
+    font-size: 1.3rem; /* Section title */
+    font-family: cursive;
+    color: #72e0d1; /* Aqua text */
+    margin-bottom: 0.8rem;
+    text-shadow: 0 0 5px #5DA9E9; /* Subtle glow */
+}
+
+/* === Layout === */
+main {
+    margin-left: 220px; /* Make room for sidebar */
+    padding: 20px; /* Inner spacing */
+}
+
+header {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center vertically */
+    padding-bottom: 20px; /* Bottom spacing */
+    border-bottom: 1px solid #5DA9E9; /* Line break */
+}
+
+input {
+    padding: 15px; /* Comfortable typing */
+    border-radius: 10px; /* Soft corners */
+    border: none; /* No border */
+    box-shadow:  /* Glowing input */
+    0 0 7px #fff,
+    0 0 42px #5DA9E9,
+    0 0 77px #5DA9E9;
+}
+
+.grid {
+    background: linear-gradient(to bottom, #101D2C, #162A38); /* Dark theme */
+    border: 2px solid #5DA9E9; /* Framed glow */
+    border-radius: 30px; /* Rounded corners */
+    margin-left: 20px; /* Side spacing */
+    align-items: center;
+    text-align: center; /* Center text */
+    display: flex; /* Horizontal scroll */
+    overflow-x: auto;  /* Enable scroll */
+    gap: 20px;  /* Space between cards */
+    padding: 50px; /* Inner space */
+    scroll-snap-type: none;
+}
+
+.grid::-webkit-scrollbar{
+    display: none; /* Hide scroll bar */
+}
+
+/* === Study Cards === */
+.box, .box1 {
+    background: linear-gradient(to top, #0A0F1E, #101D2C);  /* Layered background */
+    color: white; /* White text */
+    box-shadow: 0px 10px 10px #5DA9E9; /* Drop shadow */
+    height: 200px; /* Base height */
+    min-width: 200px;  /* Fixed card width */
+    padding: 15px;  /* Inner & outer spacing */
+    margin-bottom: 30px;
+    margin-top: 15px;
+    border-radius: 50px 0; /* Unique corner */
+    text-align: center; /* Center everything */
+    overflow: hidden;
+    position: relative; /* Hover reveals */
+    transition: transform 0.4s ease-in-out; /* Animate zoom */
+}
+
+.box1 {
+    height: 205px; /* Slight variation */
+}
+
+
+.box .box1 .description {
+    opacity: 0; /* Start hidden */
+    max-height: 0; /* Collapse space */
+    font-size: 0.85rem; /* Small text */
+    color: white;
+    transition: opacity 0.4s ease, max-height 0.4s ease; /* Smooth toggle */
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.box:hover, .box1:hover {
+    height: 300px; /* Expand on hover */
+    box-shadow: 0 0 5px #5DA9E9, 0 0 20px #5DA9E9;
+    transform: scale(1.08); /* Slight zoom effect on hover */
+    text-shadow:  /* Text glow */
+   0 0 5px #ffffff,
+   0 0 10px #ffffff;
+   box-shadow: /* Strong glow */
+   0 0 5px #5DA9E9,
+   0 0 20px #5DA9E9;
+}
+
+.box1:hover {
+    height: 270px; /* Slightly smaller grow */
+}
+
+.box:hover .description {
+    opacity: 1; /* Reveal description */
+    max-height: 100px; /* enough room for 2 lines of text */
+}
+
+.box img, .box1 img {
+    border-radius: 30px; /* Soft edges */
+    width: 170px; /* Adjust image size */
+    height: 150px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.box h3, .box1 h3 {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* === Progress Bars === */
+.progress-container {
+    background-color: #1f2a3c; /* Dark track */
+    border-radius: 20px; /* Rounded bar */
+    overflow: hidden;
+    height: 12px;
+    margin-top: 10px; /* Space above */
+    box-shadow: inset 0 0 5px #5DA9E9; /* Inner glow */
+}
+
+
+.progress-container div {
+    height: 100%; /* Fill height */
+    background: linear-gradient(to right, #5DA9E9, #72e0d1); /* Glow fill */
+    border-radius: 20px; /* Smooth ends */
+    transition: width 0.3s ease-in-out; /* Animate fill */
+}
+
+/* Width classes */
+.progressbar-30  { width: 30%; }
+.progressbar-50  { width: 50%; }
+.progressbar-60  { width: 60%; }
+.progressbar-80  { width: 80%; }
+.progressbar-100 { width: 100%;}
+.focus-progress  {width: 60%;}
+
+/* === Widgets === */
+.widgets-grid {
+    display: flex; /* Responsive row */
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.daily-focus,
+.checklist-widget {
+    flex: 1 1 300px;  /* Shrinks on small screens */
+    background: linear-gradient(135deg, rgba(30, 40, 60, 0.9), rgba(20, 30, 50, 0.95));
+    border: 2px solid #5DA9E9; /* Widget frame */
+    border-radius: 20px;  /* Round it out */
+    box-shadow: 0 0 15px rgba(93, 169, 233, 0.4); /* Soft glow */
+    padding: 1.5rem;
+    color: #ffffffcc; /* Slightly transparent text */
+    backdrop-filter: blur(6px); /* Frosted effect */
+    transition: transform 0.2s ease-in-out; /* Hover rise */
+}
+
+.daily-focus:hover,
+.checklist-widget:hover {
+    transform: translateY(-3px); /* Lift up */
+    box-shadow: 0 0 20px #5DA9E9; /* Soft glow */
+}
+
+/* Title */
+.daily-focus h3,
+.checklist-widget h3 {
+    font-size: 1.3rem; /* Medium heading size */
+    color: #72e0d1; /* Light teal color for headings */
+    margin-bottom: 0.8rem; /* Space below heading */
+    text-shadow: 0 0 5px #5DA9E9; /* Soft glow effect for emphasis */
+}
+
+.daily-focus p {
+    margin-bottom: 2rem; /* Space below paragraph */
+    line-height: 1.4; /* Improves paragraph readability */
+}
+
+/* Focus Progress Bar */
+.focus-progress-bar {
+    background: #1a2636;  /* Dark background for the progress bar container */
+    border-radius: 10px;  /* Rounded corners for a smooth look */
+    height: 12px; /* Fixed height of the progress bar */
+    overflow: hidden;  /* Hides anything overflowing from rounded corners */
+    margin-top: 12px; /* Space above the bar */
+    box-shadow: inset 0 0 6px #5DA9E9;  /* Inner glow effect to enhance the bar's depth */
+}
+
+.focus-progress {
+    background: linear-gradient(to right, #5DA9E9, #72e0d1); /* Gradient fill for the moving bar */
+    height: 100%; /* Fills the height of the container */
+    border-radius: 10px; /* Rounded corners to match the container */
+    transition: width 0.4s ease-in-out;  /* Smooth width animation when value changes */
+}
+
+/* Checklist */
+.checklist-widget ul {
+    list-style: none; /* Removes default bullet points from the list */
+    padding: 0; /* Removes default inner spacing on the list */
+}
+
+.checklist-widget li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem; /* Space between checkbox and label text */
+    margin-bottom: 1rem; /* Space below each list item */
+    font-size: 1rem; /* Standard text size for checklist items */
+    color: #e6f4ff; /* Light text color for better contrast on dark bg */
+}
+
+.checklist-widget input {
+    accent-color: #5DA9E9; /* Custom checkbox color */
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* === Footer === */
+.site-footer {
+    background: linear-gradient(to right, #1f2a3c, #0e1825); /* Gradient background for a smooth dark blend */
+    padding: 1rem 2rem;
+    text-align: center;  /* Center-aligns all footer text */
+    color: #72e0d1; /* Soft cyan text color for visibility */
+    font-size: 0.95rem;  /* Slightly smaller than default text size */
+    box-shadow: 0 -2px 10px rgba(93, 169, 233, 0.2); /* Soft glow at the top of footer for lift */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /* Subtle top border */
+    margin-top: 2rem; /* Space above footer from the content above */
+    padding-left: 300px; /* Left padding to align with sidebar content */
+}
+
+.site-footer p {
+    font-size: 1rem; /* Standard paragraph size */
+    margin: 0.3rem 0; /* Small vertical spacing */
+    text-shadow: 0 0 5px #5DA9E9;  /* Subtle glowing text effect */
+}
+
+
+
+  
+  
+  

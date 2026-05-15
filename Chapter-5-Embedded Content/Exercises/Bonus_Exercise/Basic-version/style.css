@@ -1,0 +1,114 @@
+/* Background styling */
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/008/813/769/non_2x/3d-render-of-flash-neon-and-light-glowing-on-dark-scene-speed-light-moving-lines-free-photo.jpg); /* Neon background image */
+  height: 100vh;  /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Space inside the body */
+  overflow: hidden; /* Prevent scrolling */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start; /* Align to top */
+  color: #fff; /* White text */
+}
+
+/* Header section */
+header {
+  margin-bottom: 30px; /* Space below heading */
+}
+
+header h1 {
+  font-family: 'Monoton', cursive; /* Glitch-style font */
+  font-size: 2.5rem; /* Large heading text */
+  font-weight: 700; /* Bold */
+  margin-bottom: 10px; /* Space below heading */
+  color: #fff; /* White color */
+  text-shadow: /* Neon text glow */
+    -2px 2px #ff51c5,
+    2px -2px #00f6ff,
+    0 0 5px #fff;
+  letter-spacing: 2px; /* Spaced-out letters */
+  transform: skewX(-1deg); /* Slight tilt effect */
+}
+
+/* Soundboard container */
+.soundboard {
+  display: flex;  /* Flex layout */
+  flex-wrap: wrap; /* Wrap to new rows */
+  justify-content: center; /* Center items */
+  gap: 30px; /* Space between cards */
+  max-width: 1200px; /* Limit overall width */
+  width: 100%; /* Full width of container */
+}
+
+/* Individual sound card */
+.sound-card {
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Light transparent border */
+  background: rgba(255, 255, 255, 0.05); /* Translucent background */
+  box-shadow: 0 0 20px rgba(0, 246, 255, 0.2); /* Outer glow effect */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  width: 250px; /* Card width */
+  height: 100px; /* Card height */
+  text-align: center; /* Center text inside */
+  backdrop-filter: blur(10px); /* Glassmorphism blur */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth interaction effects */
+}
+
+/* Hover effects on card */
+.sound-card:hover {
+  transform: translateY(7px) skewX(-1deg); /* Raise and tilt card */
+  background: linear-gradient(135deg, /* Add gradient background */
+    rgba(20, 237, 244, 0.349),
+    rgba(243, 42, 176, 0.377));
+  cursor: pointer; /* Show pointer on hover */
+}
+
+/* Animation: glowing pulse */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 6px #00f9ff, 0 0 10px #00f9ff;  /* Soft start glow */
+  }
+  50% {
+    box-shadow: 0 0 56px #c00582, 0 0 90px #00f9ff; /* Brightest point */
+  }
+  1000% {
+    box-shadow: 0 0 50px #c00582, 0 0 90px #00f9ff; /* Return to glow */
+  }
+}
+
+/* Sound card title */
+.sound-card h2 {
+  transition: transform 0.3s ease; /* Smooth animation */
+  margin-bottom: 10px; /* Space below text */
+  font-size: 1.2rem;  /* Medium heading size */
+  font-weight: 600; /* Semi-bold */
+  color: #fff; /* White color */
+  text-shadow:    /* Neon glow */
+    -1px 1px #ff51c5,
+    1px -1px #00f6ff,
+    0 0 3px #fff;
+  transform: skewX(-0.5deg);   /* Subtle tilt */
+}
+
+/* Animated color glow for h2 on hover */
+@keyframes colorGlow {
+  0%   { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+  50%  { text-shadow: 0 0 5px #ff51c5, 0 0 10px #ff51c5; color: #ff51c5; }
+  100% { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+}
+
+/* Trigger color animation when hovering the heading */
+.sound-card:hover h2 {
+  animation: colorGlow 1.5s infinite;   /* Cycle through glowing colors */
+}
+
+/* Apply glowPulse animation when playing */
+.sound-card.playing {
+  animation: glowPulse 1.5s infinite alternate;   /* Neon pulse while playing */
+}
+
+
+  
+  

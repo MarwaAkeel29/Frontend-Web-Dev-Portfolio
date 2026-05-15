@@ -1,0 +1,106 @@
+/* General Body Styling */
+body {
+    background-color: #f4f1e6; /* Aged paper background */
+    font-family: 'Merriweather', serif; /* Vintage-style serif font */
+    color: #3e2c24; /* Warm brown text */
+    text-align: center;
+    padding: 20px;
+    margin: 80px;
+}
+
+/* Header Section */
+header {
+    padding: 20px;
+    background-color: rgba(244, 241, 230, 0.9); /* Soft parchment look */
+}
+
+/* Styling for Main Heading */
+h1 {
+    font-size: 36px;
+    color: #5a3e2b; /* Deep brown color */
+    text-transform: uppercase; /* Vintage typography */
+    letter-spacing: 2px; /* Spacing for refined look */
+    border-bottom: 3px solid #d4a373; /* Underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin: 30px;
+}
+
+/* Styling for description text */
+.description {
+    font-style: italic; /* Italic font */
+    margin: 10px;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Styling for Subheadings */
+h2 {
+    font-size: 24px;
+    color: #704214; /* Warm coffee color */
+    font-style: italic; /* Italic as per theme */
+}
+
+/* Styling for image sections */
+.image-container {
+    background: rgba(255, 248, 220, 0.8); /* Light parchment effect */
+    border: 2px solid #c7a17a; /* Classic frame look */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds depth to the section */
+    padding: 15px;
+    margin: 20px auto;
+    width: 450px; /* Consistent width */
+    border-radius: 10px; /* Smooth edges */
+}
+
+/* Vintage Image Effects */
+.image-container img {
+    width: 80%; /* Ensures images scale well */
+    height: auto;
+    border-radius: 5px; /* Rounded corners */
+    filter: sepia(40%) contrast(90%) brightness(90%); /* Warm tint effect */
+    transition: transform 0.4s ease-in-out; /* Smooth hover effect */
+}
+
+/* Zoom and reduced sepia on hover */
+.image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarges elements when hovered */
+    filter: sepia(20%) contrast(95%) brightness(100%); /* CSS filters */
+}
+
+/* Styling for Photo Credits */
+.photo-credit {
+    font-size: 14px;
+    color: #5a3e2b; /* Text color */
+    font-style: italic;
+    margin-top: 8px; /* Top margin */
+}
+
+/* Styling for credit links */
+.photo-credit a {
+    color: #704214; /* Warm brown color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect on credit link */
+.photo-credit a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    background-color: rgba(244, 241, 230, 0.9); /* Matches header */
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #5a3e2b;
+    border-top: 3px solid #d4a373; /* Separating line for visual structure */
+}
+
+
+
+
+

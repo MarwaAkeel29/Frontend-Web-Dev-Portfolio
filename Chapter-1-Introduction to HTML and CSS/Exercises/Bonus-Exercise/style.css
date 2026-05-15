@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family: "Fira Code", monospace; /* Monospaced font for a code-like feel */
+    background-color: #121212; /* Dark background for less eye strain */
+    color: #E0E0E0; /* Light gray for readability on dark background */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add spacing inside the body */
+}
+
+/* Header */
+header {
+    background-color: #1e1e2e; /* Deep blue-gray for contrast */
+    color: #9a86fd; /* Light purple text for theme consistency */
+    border: 3px solid #9a86fd; /* Neon purple border for visual accent */
+    border-radius: 10px; /* Smooth, rounded corners */
+    box-shadow: 5px 5px 10px rgb(67, 55, 98); /* Adds depth with soft shadow */
+    padding: 20px; /* Space inside the header */
+    text-align: center; /* Center-align header content */
+    font-size: 1em; /* Base font size */
+    font-weight: bold; /* Emphasize the text */
+    margin-left: 90px; /* Side spacing to center header */
+    margin-right: 90px; /* Side spacing to center header */
+}
+
+.Description {
+    color: white; /* White text for visibility */
+}
+
+/* Section Styling */
+section {
+    background-color: #1e1e2e; /* Darker section background */
+    color: #E0E0E0; /* Consistent text color */
+    border: 3px solid #9a86fd; /* Neon purple border */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 5px 5px 10px rgb(67, 55, 98); /* Shadow for depth */
+    padding: 20px; /* Inside spacing */
+    margin: 20px auto; /* Vertical margin and horizontal centering */
+    width: 80%; /* Width relative to container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft outer shadow */
+}
+
+/* Section Variations */
+.text_formatting, 
+.html_tags, 
+.links_media, 
+.lists_forms, 
+.color,
+.font,
+.borders,
+.layout,
+.transition {
+    box-shadow: 4px 4px 10px #5b5780f9; /* Slight shadow with purple tint */
+    background-color: #282846; /* Slightly lighter background */
+    padding: 15px; /* Space inside each section */
+    border-radius: 8px; /* Rounded edges */
+    margin-bottom: 50px; /* Space below each section */
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem; /* Large title text */
+}
+
+h2 {
+    font-size: 1.8rem; /* Subheading size */
+    color: #9a86fd; /* Purple theme color */
+    border-bottom: 2px solid #9a86fd; /* Underline for emphasis */
+    padding-bottom: 5px; /* Space below text before underline */
+}
+
+h3 {
+    color: #9a86fd; /* Themed heading color */
+    font-size: 1.5rem; /* Sub-subheading size */
+}
+
+h4 {
+    font-size: 1.2rem; /* Smaller heading size */
+}
+
+/* Code Block Styles */
+code {
+    padding: 4px; /* Space inside code element */
+    border-radius: 5px; /* Slight rounding */
+    font-family: monospace; /* Monospaced for code */
+    color: #9a86fd; /* Themed purple for code */
+}
+
+pre {
+    background-color: black; /* Dark background for code blocks */
+    padding: 10px; /* Space inside */
+    border-radius: 5px; /* Rounded edges */
+    overflow-x: auto; /* Scroll for wide code */
+    font-family: monospace; /* Monospaced font */
+    white-space: pre-wrap; /* Wrap long lines */
+}
+
+/* Links */
+a {
+    color: #9a86fd; /* Themed link color */
+    text-decoration: none; /* No underline by default */
+    font-weight: bold; /* Make links stand out */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Code Headings with Varying Font Sizes */
+.code-headings span:nth-child(1) { font-size: 2em; }
+.code-headings span:nth-child(2) { font-size: 1.8em; }
+.code-headings span:nth-child(3) { font-size: 1.6em; }
+.code-headings span:nth-child(4) { font-size: 1.4em; }
+.code-headings span:nth-child(5) { font-size: 1.2em; }
+.code-headings span:nth-child(6) { font-size: 1em; }
+
+/* Iframe Styling */
+.iframe {
+    width: 650px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    border: #241d47; /* Custom border color */
+    margin-left: 65px; /* Horizontal spacing */
+    margin-right: 65px; /* Horizontal spacing */
+}
+
+/* Form Styling */
+.form, .form1 {
+    color: #9a86fd; /* Themed text color */
+    width: 200px; /* Fixed width */
+    padding: 15px; /* Space inside */
+    text-align: left; /* Align text to left */
+    font-family: sans-serif; /* Clean font style */
+}
+
+.form input, .form1 input {
+    width: 100%; /* Full width inputs */
+    padding: 8px; /* Internal spacing */
+    margin: 8px 0; /* Vertical spacing */
+    border: 2px solid #241d47; /* Subtle border */
+    border-radius: 5px; /* Rounded input corners */
+}
+
+.form button, .form1 button {
+    background: #9a86fd; /* Themed button color */
+    color: #241d47; /* Contrast text color */
+    padding: 8px 15px; /* Button padding */
+    border: none; /* No default border */
+    border-radius: 5px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.form button:hover {
+    background: #c1bae0; /* Lighter background on hover */
+}
+
+/* Color Example */
+.color-ex {
+    color: crimson; /* Text color */
+    background-color: lightgoldenrodyellow; /* Background for contrast */
+}
+
+/* Font Example */
+.font-ex {
+    font-family: "Courier New", monospace; /* Choose a font */
+    font-size: 20px; /* Adjust text size */
+    font-weight: bold; /* Make it stand out */
+    font-style: italic; /* Add some flair */
+}
+
+/* Borders Example */
+.borders-ex {
+    border: 3px solid #9a86fd; /* Neon purple border */
+    border-radius: 10px; /* Smooth, rounded corners */
+    box-shadow: 5px 5px 10px rgb(67, 55, 98); /* Adds depth */
+}
+
+/* Layout Example */
+.layout-ex {
+    margin: 20px; /* Space outside an element */
+    padding: 15px; /* Space inside an element */
+    display: flex; /* Aligns items neatly */
+    justify-content: center; /* Centers items horizontally */
+}
+
+.form1 {
+    transition: all 0.9s ease-in-out; /* Smooth effect when hovering */
+}
+
+.form1 button:hover {
+    background: #9a86fd; /* Background color change on hover */
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+/* Clipping Example */
+.clip-box {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    background: coral; /* Background color */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%); /* Triangular clipping shape */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    color: white; /* Text color */
+    font-weight: bold; /* Emphasized text */
+}
+
+/* Masking Example */
+.mask-box {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1z3WO2y5h7YkHljxIsvwuOxP21OE_8tnedA&s') no-repeat center/cover; /* Background image fit */
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%); /* Circular gradient mask */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+}

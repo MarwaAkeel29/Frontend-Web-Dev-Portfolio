@@ -1,0 +1,161 @@
+/* IMPORT PIXEL FONT */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Imports retro gaming-style font */
+
+/* RESET */
+* {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Includes border and padding in element's total width and height */
+}
+
+/* BODY - GLITCH GRID BACKGROUND */
+body {
+  font-family: 'Press Start 2P', cursive; /* Sets pixel-style font for entire page */
+  min-height: 100vh; /* Makes body fill at least full height of the viewport */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Horizontally centers the container */
+  align-items: center; /* Vertically centers the container */
+  padding: 1rem; /* Adds space around the container */
+  overflow: hidden; /* Prevents scrollbars from appearing */
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+  z-index: 0; /* Puts body behind other elements if needed */
+}
+
+body::before {
+  content: ''; /* Generates the pseudo-element */
+  position: absolute; /* Positions it absolutely relative to body */
+  top: 0; /* Aligns to the top edge */
+  left: 0; /* Aligns to the left edge */
+  width: 100%; /* Makes background span full width */
+  height: 100%; /* Makes background span full height */
+  background-image: url(https://img.pikbest.com/wp/202405/gas-station-glowing-and-vintage-car-a-cyberpunk-scene-with-vibrant-colors-fog-rain-reflections-on-the-asphalt-3d-illustration_9797955.jpg!w700wp); /* Sets cyberpunk background image */
+  background-size: cover; /* Ensures image covers entire area */
+  background-position: center; /* Centers image in the background */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  filter: blur(3px); /* Applies a blur effect to create depth */
+  z-index: -1; /* Sends background behind main content */
+}
+
+/* MAIN CONTAINER */
+.calculator-container {
+  background: #111; /* Dark background for calculator box */
+  border: 4px solid #00e1fd; /* Neon border */
+  border-radius: 0; /* Sharp corners for pixel look */
+  padding: 1rem; /* Space inside the box */
+  max-width: 520px; /* Maximum width of container */
+  width: 90%; /* Responsive width */
+  text-align: center; /* Centers text and inputs */
+  box-shadow: 
+    0 0 15px #00e1fd, /* Outer glow */
+    0 0 30px #00e1fd inset; /* Inner neon glow */
+  transition: transform 0.2s ease-in-out; /* Smooth scale effect */
+  position: relative; /* Allows stacking over background */
+  z-index: 1; /* Keeps calculator above the background blur */
+}
+
+.calculator-container:hover {
+  transform: scale(1.01); /* Slight zoom effect on hover */
+}
+
+/* HEADER */
+h1 {
+  font-size: 1.5rem; /* Slightly larger title text */
+  color: #CC7Dbb; /* Retro purple-pink title color */
+  text-shadow: 
+    0 0 5px #CC7Dbb, 
+    0 0 10px #CC7Dbb; /* Neon glow effect */
+  margin-bottom: 2rem; /* Space below the title */
+  animation: glitch 0.4s infinite; /* Applies glitch animation repeatedly */
+}
+
+/* FORM GROUPS */
+.form-group {
+  margin-bottom: 1.5rem; /* Space between each input group */
+  text-align: left; /* Left-aligns labels */
+}
+
+label {
+  font-size: 0.75rem; /* Small label text size */
+  margin-bottom: 0.5rem; /* Space below label */
+  display: block; /* Makes label appear on its own line */
+  color: #88ffe6; /* Light teal font color for contrast */
+}
+
+input {
+  width: 100%; /* Full width input */
+  padding: 0.75rem; /* Padding inside input box */
+  font-size: 0.9rem; /* Slightly larger text */
+  background: #000; /* Black background for input */
+  color: #00ffcc; /* Neon green text color */
+  border: 3px solid #22ddee; /* Cyan border */
+  box-shadow: 
+    0 0 5px #cc7dbb, 
+    0 0 5px #00e1fd, 
+    0 0 5px #cc7dbb; /* Subtle neon shadows */
+  outline: none; /* Removes default focus outline */
+  font-family: 'Press Start 2P', cursive; /* Keeps pixel font */
+  text-transform: uppercase; /* Converts input text to uppercase */
+}
+
+input:focus {
+  border-color: #ff00cc; /* Changes border to pink on focus */
+  box-shadow: 0 0 10px #ff00cc; /* Glows pink when active */
+  background-color: #111; /* Slightly lighter black */
+}
+
+/* BUTTON */
+button {
+  margin-top: 1rem; /* Space above button */
+  background: linear-gradient(90deg, #cc7dbb, #00e1fd); /* Gradient background */
+  color: #000; /* Dark text for contrast */
+  border: 3px solid #cc7dbb; /* Pink-purple border */
+  padding: 0.9rem 1.5rem; /* Padding for button size */
+  font-size: 0.75rem; /* Pixel-style font size */
+  font-family: 'Press Start 2P', cursive; /* Pixel font */
+  text-transform: uppercase; /* Capital letters */
+  cursor: pointer; /* Shows hand on hover */
+  box-shadow: 
+    0 0 10px #cc7dbb, 
+    0 0 20px #00e1fd, 
+    0 0 30px #cc7dbb; /* Glowing button effect */
+  transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+button:hover {
+  background: linear-gradient(90deg, #00e1fd, #cc7dbb); /* Reversed gradient */
+  border-color: #00e1fd; /* Cyan border on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 
+    0 0 15px #00e1fd, 
+    0 0 30px #cc7dbb, 
+    0 0 40px #00e1fd; /* Stronger glow on hover */
+}
+
+/* RESULTS PANEL */
+#results {
+  margin-top: 2rem; /* Space above results box */
+  background: #000; /* Dark results background */
+  border: 4px dashed #22ddee; /* Dashed neon border */
+  box-shadow: 
+    0 0 6px #cc7dbb, 
+    0 0 20px #00e1fd, 
+    0 0 6px #cc7dbb; /* Soft neon glow */
+  padding: 1rem; /* Inner spacing */
+  font-size: 0.7rem; /* Compact result text */
+  color: #00ffcc; /* Neon green text */
+  line-height: 2; /* Increases space between lines */
+  text-align: left; /* Aligns result text left */
+}
+
+/* GLITCH EFFECT */
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; } /* Red/blue split shadow */
+  20% { text-shadow: -2px 0 red, 2px 0 blue; }
+  40% { text-shadow: 2px 0 red, -2px 0 blue; }
+  60% { text-shadow: -2px 0 red, 2px 0 blue; }
+  80% { text-shadow: 2px 0 red, -2px 0 blue; }
+  100% { text-shadow: none; } /* Removes glitch briefly */
+}
+
+
+

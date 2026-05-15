@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;       /* Sets base font style */
+    padding: 20px;                        /* Adds space inside the body */
+    max-width: 600px;                     /* Limits width for print layout */
+    margin: auto;                         /* Centers the content */
+}
+
+h4 {
+    border-bottom: 2px solid #231717;     /* Adds underline to section headings */
+}
+
+.recipe-details {
+    border: 5px solid #a06666;            /* Outlines the main recipe box */
+    padding: 41px;                        /* Inner spacing */
+    border-radius: 10px;                  /* Rounded corners */
+    text-align: center;                   /* Center aligns text */
+    margin: 30px auto;                    /* Adds vertical spacing & centers */
+    max-width: 600px;                     /* Prevents overflow */
+}
+
+.recipe-image {
+    width: 100%;                          /* Makes image responsive */
+    max-width: 200px;                     /* Restricts image size */
+    height: auto;                         /* Keeps aspect ratio */
+    border: 3px solid rgb(189, 118, 118); /* Adds border to image */
+}
+
+.recipe-text {
+    font-size: 18px;                      /* Sets font size */
+    font-weight: bold;                    /* Makes text bold */
+}
+
+.time-info p {
+    font-size: 1rem;                      /* Sets paragraph font size */
+    margin: 5px 0;                        /* Adds spacing between lines */
+    font-weight: bold;                    /* Bold time info text */
+}
+
+.recipe-process {
+    text-align: left;                     /* Aligns content to the left */
+}
+
+.print-btn {
+    display: block;                       /* Makes button a block element */
+    margin-top: 20px;                     /* Adds space above the button */
+    padding: 10px;                        /* Inner button padding */
+    background: #8b0000;                  /* Dark red background */
+    color: white;                         /* White text */
+    border: none;                         /* Removes default border */
+    cursor: pointer;                      /* Changes cursor to pointer */
+}
+
+@media print {
+    .print-btn {
+        display: none;                    /* Hides print button in print view */
+    }
+}

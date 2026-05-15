@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Sets main font */
+    font-weight: 400; /* Regular font weight */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+}
+
+/* Header */
+header {
+    background-color: #17072b; /* Dark purple background */
+    color: #ffffff; /* White text */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Top and bottom padding */
+    margin-bottom: 0; /* Removes space below */
+}
+
+header h1 {
+    font-family: Tahoma, sans-serif; /* Sets title font */
+    font-weight: 700; /* Bold text */
+    font-size: 45px; /* Large heading */
+    padding-bottom: 20px; /* Space below heading */
+    margin: 0; /* Removes margin */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none; /* No bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center items */
+}
+
+nav ul li {
+    margin: 0 23px; /* Space between items */
+    font-size: 1.5rem; /* Bigger font size */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: #ffffff; /* White text */
+    display: inline-block; /* Allows padding/margins */
+}
+
+/* Main Layout */
+main {
+    display: flex; /* Flex layout */
+    flex-wrap: wrap; /* Wrap items on small screens */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Inner spacing */
+    max-width: 1200px; /* Max width of content */
+    margin: auto; /* Center the layout */
+}
+
+/* Welcome Section */
+.welcome {
+    flex: 2; /* Takes more space than sidebar */
+    padding-right: 6px; /* Space to the right */
+    margin-right: 10px; /* Extra separation from sidebar */
+}
+
+.welcome h2 {
+    font-family: Tahoma, sans-serif; /* Heading font */
+    font-size: 30px; /* Large font */
+    font-weight: 900; /* Very bold */
+    margin-top: 2px; /* Small top margin */
+    border-bottom: 3px solid #000; /* Black underline */
+    display: inline-block; /* Allows border to fit content */
+}
+
+.welcome p {
+    margin-top: 1px; /* Tiny top margin */
+    font-size: 18px; /* Normal readable size */
+    line-height: 1.1; /* Slight line spacing */
+}
+
+/* Welcome Section Image */
+.image-container img {
+    width: 750px; /* Image width */
+    max-width: 730px; /* Prevents too wide scaling */
+    height: 296px; /* Fixed height */
+    display: block; /* No extra space below */
+    margin-top: 10px; /* Space above image */
+}
+
+/* Sidebar Layout */
+.sidebar {
+    flex: 1; /* Smaller than main */
+    background-color: #172d67; /* Dark blue bg */
+    color: #ffffff; /* White text */
+    padding-top: 1px; /* Top spacing */
+    padding-left: 20px; /* Space from left edge */
+    padding-bottom: 23px; /* Bottom padding */
+    padding-right: 60px; /* Right spacing */
+    width: 6%; /* Narrow sidebar */
+}
+
+.sidebar h2 {
+    font-family: Tahoma, sans-serif; /* Heading font */
+    font-size: 30px; /* Large text */
+    font-weight: bold; /* Bold style */
+    margin-left: 15px; /* Indent from edge */
+    border-bottom: 2px solid #ffffff; /* White underline */
+    display: inline-block; /* Fits border to text */
+}
+
+.sidebar ul {
+    margin-top: 1px; /* Space above list */
+    padding-left: 5px; /* Indent list */
+    list-style: none; /* Remove bullets */
+}
+
+.sidebar ul li {
+    padding: 10px; /* Space around each item */
+}
+
+/* Sidebar Images */
+.sidebar_images {
+    display: flex; /* Horizontal layout */
+    justify-content: space-between; /* Space evenly */
+    gap: 10px; /* Space between images */
+    margin-top: 30px; /* Space above image section */
+}
+
+.sidebar_images img {
+    width: 190px; /* Set image width */
+    height: 200px; /* Set image height */
+}
+
+/* Footer */
+footer {
+    background-color: #8c15e9; /* Purple background */
+    color: #ffffff; /* White text */
+    text-align: center; /* Centered text */
+    padding: 10px; /* Inner spacing */
+    font-size: 14px; /* Smaller font size */
+    margin-top: 1px; /* Tiny space above */
+}
+
+footer p {
+    margin-top: 1px; /* Small margin above */
+    margin-bottom: 1px; /* Small margin below */
+}
+
+
+

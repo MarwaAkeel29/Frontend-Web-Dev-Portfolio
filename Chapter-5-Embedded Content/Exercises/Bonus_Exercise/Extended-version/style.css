@@ -1,0 +1,232 @@
+/* Background styling */
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/008/813/769/non_2x/3d-render-of-flash-neon-and-light-glowing-on-dark-scene-speed-light-moving-lines-free-photo.jpg); /* Neon background image */
+  height: 100vh;  /* Full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 40px; /* Space inside the body */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  color: #fff; /* White text */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  box-sizing: border-box;
+}
+
+/* Page heading */
+header {
+  margin-bottom: 10px; /* Space below heading */
+}
+
+header h1 {
+  font-family: 'Monoton', cursive; /* Glitch-style font */
+  font-size: 2.5rem; /* Large heading text */
+  font-weight: 700; /* Bold */
+  color: #fff; /* White color */
+  text-shadow: /* Neon text glow */
+    -2px 2px #ff51c5,
+    2px -2px #00f6ff,
+    0 0 5px #fff;
+  letter-spacing: 2px; /* Spaced-out letters */
+  transform: skewX(-1deg); /* Slight tilt effect */
+}
+
+/* Main layout container: TTS on left, Soundboard on right */
+.soundboard-layout {
+  display: flex; /* Flex layout */
+  width: 100%;  /* Full width of container */
+  max-width: 1100px; /* Limit overall width */
+  justify-content: space-between;
+  gap: 30px; /* Space between cards */
+  flex-grow: 1;
+  overflow: visible;
+}
+
+/* TTS Panel on the left */
+.text-to-speech {
+  flex: 1; /* Takes up 1 part of available flex space */
+  min-width: 100px; /* Prevents the panel from shrinking too small */
+  height: 300px; /* Fixed height for consistency */
+  margin-top: 45px; /* Adds space above the panel */
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Light transparent border */
+  padding: 20px; /* Inner spacing */
+  border-radius: 15px; /* Rounded corners */
+  backdrop-filter: blur(8px); /* Blurs the content behind the panel */
+  box-shadow: 0 0 15px rgba(255, 81, 197, 0.3); /* Subtle glowing shadow */
+  display: flex; /* Enables flex layout */
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: space-between; /* Distributes items evenly with space */
+}
+
+.text-to-speech h2 {
+  font-size: 1.6rem; /* Large heading */
+  margin-bottom: 15px; /* Space below heading */
+  text-shadow: /* Glowing effect on text */
+    -1px 1px #ff51c5,
+    1px -1px #00f6ff,
+    0 0 3px #fff;
+}
+
+.text-to-speech textarea {
+  width: 90%; /* Almost full width */
+  height: 100px; /* Fixed height for input */
+  margin-left: 5px; /* Small space from left */
+  padding: 10px; /* Inner spacing */
+  font-family: 'Orbitron', sans-serif; /* Matches site’s font */
+  border-radius: 10px; /* Rounded corners */
+  border: none; /* No border */
+  outline: none; /* No blue highlight on focus */
+  resize: none; /* Prevents resizing */
+  background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+  color: #fff; /* White text */
+  font-size: 1rem; /* Standard size */
+  backdrop-filter: blur(5px); /* Slight blur behind it */
+  margin-bottom: 15px; /* Space below */
+}
+
+.text-to-speech button {
+  padding: 10px 20px; /* Space around text */
+  background: linear-gradient(45deg, #00f6ff, #ff51c5); /* Vibrant gradient */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded edges */
+  color: white; /* White text */
+  font-weight: bold; /* Bold for emphasis */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth animations */
+}
+
+.text-to-speech button:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 0 10px #00f6ff, 0 0 20px #ff51c5; /* Glowing effect on hover */
+}
+
+/* Soundboard wrapper on the right */
+.soundboard-wrapper {
+  flex: 2; /* Takes up 2 parts of flex space (twice the TTS panel) */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Stack elements vertically */
+  gap: 10px; /* Space between children */
+  overflow: visible; /* No cropping of content */
+  margin-top: -40px; /* Pulls the panel up slightly */
+}
+
+/* Pagination buttons */
+.pagination-controls {
+  display: flex; /* Flexbox layout */
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between arrows */
+}
+
+.arrow {
+  font-size: 1.9rem; /* Large arrow */
+  background: transparent; /* No background */
+  border: none; /* No border */
+  border-radius: 30px; /* Circular shape */
+  padding-bottom: 5px; /* Slight vertical alignment tweak */
+  cursor: pointer; /* Pointer on hover */
+  color: #fff; /* White text */
+  text-shadow: /* Glowing text effect */
+    -1px 1px #ff51c5,
+    1px -1px #00f6ff,
+    0 0 3px #fff;
+  transition: transform 0.2s ease; /* Smooth hover zoom */
+  animation: glowPulse 1.5s infinite alternate; /* Glowing pulse animation */
+}
+
+.arrow:hover {
+  transform: scale(1.2); /* Enlarges on hover for feedback */
+}
+
+.arrow.hidden {
+  visibility: hidden; /* Fully hides the arrow but keeps space reserved */
+}
+
+
+/* Soundboard grid */
+.soundboard {
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap to new rows */
+  gap: 20px; /* Space between cards */
+  justify-content: flex-start;
+  max-height: 700px; /* Limit overall width */
+}
+
+/* Individual Sound Card */
+.sound-card {
+  border: 2px solid rgba(255, 255, 255, 0.1); /* Light transparent border */
+  background: rgba(255, 255, 255, 0.05); /* Translucent background */
+  box-shadow: 0 0 20px rgba(0, 246, 255, 0.2); /* Outer glow effect */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  width: 150px; /* Card width */
+  height: 100px; /* Card height */
+  text-align: center; /* Center text inside */
+  backdrop-filter: blur(10px); /* Glassmorphism blur */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth interaction effects */
+}
+
+/* Hover effects on card */
+.sound-card:hover {
+  transform: translateY(7px) skewX(-1deg); /* Raise and tilt card */
+  background: linear-gradient(135deg, /* Add gradient background */
+    rgba(20, 237, 244, 0.349),
+    rgba(243, 42, 176, 0.377));
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.duration {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.6em; /* Half the size of the heading */
+  color: white; /* White text */
+  opacity: 0.7;  /* Slightly faded to look idle */
+  text-align: center;
+}
+
+/* Sound card title */
+.sound-card h2 {
+  transition: transform 0.3s ease; /* Smooth animation */
+  margin-bottom: 10px; /* Space below text */
+  font-size: 1.2rem;  /* Medium heading size */
+  font-weight: 600; /* Semi-bold */
+  color: #fff; /* White color */
+  text-shadow:    /* Neon glow */
+    -1px 1px #ff51c5,
+    1px -1px #00f6ff,
+    0 0 2px #fff;
+  transform: skewX(-0.5deg);   /* Subtle tilt */
+}
+
+/* Playing Animation */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 6px #00f9ff, 0 0 10px #00f9ff; /* Soft start glow */
+  }
+  50% {
+    box-shadow: 0 0 56px #c00582, 0 0 90px #00f9ff; /* Brightest point */
+  }
+  100% {
+    box-shadow: 0 0 50px #c00582, 0 0 90px #00f9ff; /* Return to glow */
+  }
+}
+
+/* Glow text animation */
+@keyframes colorGlow {
+  0%   { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+  50%  { text-shadow: 0 0 5px #ff51c5, 0 0 10px #ff51c5; color: #ff51c5; }
+  100% { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+}
+
+/* Trigger color animation when hovering the heading */
+.sound-card:hover h2 {
+  animation: colorGlow 1.5s infinite;
+}
+
+/* Apply glowPulse animation when playing */
+.sound-card.playing {
+  animation: glowPulse 1.5s infinite alternate;   /* Neon pulse while playing */
+}
+
+
+  
+  

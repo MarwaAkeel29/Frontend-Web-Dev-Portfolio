@@ -1,0 +1,159 @@
+/* IMPORT RETRO HACKER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); /* Loads pixel-style monospace font from Google Fonts */
+
+/* RESET */
+* {
+  margin: 0; /* Removes default outer spacing */
+  padding: 0;  /* Removes default inner spacing */
+  box-sizing: border-box; /* Includes padding/border in element's total width/height */
+}
+
+/* BODY BACKGROUND - DARK HACKER MODE */
+body {
+  font-family: 'Share Tech Mono', monospace; /* Applies retro hacker font */
+  background-image: url(https://png.pngtree.com/background/20240412/original/pngtree-red-abstract-binary-code-technology-a-3d-rendered-illustration-of-digital-picture-image_8461897.jpg); /* Hacker inspired background image */
+  background-size: cover; /* Ensures image covers entire area */
+  color: #FFDBE8; /* Light pink text color for contrast */
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 2rem;/* Adds space around the content */
+}
+
+/* TERMINAL FRAME */
+.hacker-frame {
+  background: #1a0d11; /* Deep black-red terminal background */
+  border: 3px solid #ec0e20; /* Bright pink border to simulate terminal shell */
+  box-shadow: 0 0 15px #FF94B2, /* Outer glow effect */
+              0 0 30px #F24455 inset; /* Inner glow for neon look */
+  padding: 2rem;  /* Space inside the container */
+  max-width: 600px; /* Limits the width on large screens */
+  width: 100%;  /* Responsive width */
+  border-radius: 8px;  /* Rounded corners for smooth appearance */
+}
+
+/* HEADER */
+.terminal-header h1 {
+  font-size: 1.2rem; /* Medium-large heading */
+  color: #F24455;  /* Bright red for command-line vibe */
+  text-shadow: 0 0 5px #F24455, /* Glow effect for neon appearance */
+               0 0 10px #E5203A;
+  animation: flicker 1.2s infinite alternate; /* Flickering animation */
+  margin-bottom: 0.5rem;  /* Spacing under the heading */
+}
+
+.subline {
+  font-size: 0.9rem;  /* Smaller subtitle text */
+  color: #FF94B2;  /* Light pink color */
+  margin-bottom: 1.5rem;  /* Space below the subline */
+}
+
+/* RGB DISPLAY */
+.rgb-display p {
+  font-size: 1rem; /* Slightly smaller label */
+  color: #FF94B2; /* Light pink text */
+  margin-bottom: 0.3rem; /* Spacing between label and value */
+}
+
+#rgbCode {
+  display: inline-block; /* Allows padding and background */
+  font-size: 1rem; /* Normal font size */
+  color: #FFDBE8; /* Light text for visibility */
+  background: #E5203A; /* Bright red background for code block */
+  padding: 0.5rem 1rem; /* Inner spacing */
+  border-radius: 4px; /* Slightly rounded corners */
+  box-shadow: 0 0 10px #F24455; /* Glowing border effect */
+  margin-bottom: 1.5rem; /* Space below the RGB code block */
+}
+
+/* COLOR OPTIONS */
+.color-options {
+  display: flex;            /* Use flexbox instead */
+  justify-content: center;  /* Centers content horizontally */
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.color-box {
+  width: 100px;              /* Set width equal to height */
+  height: 90px;             /* Keep the original height */
+  border: 2px solid #FF94B2; /* border effect */
+  border-radius: 50%;       /* Makes it a perfect circle */
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.color-box:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  box-shadow: 0 0 15px #FF94B2; /* Glow effect when hovered */
+}
+
+/* SYSTEM OUTPUT */
+.system-output p {
+  font-size: 0.9rem; /* Small font for stats/messages */
+  margin: 0.3rem 0;  /* Vertical spacing between lines */
+  color: #FFDBE8; /* Light pink text color */
+}
+
+/* GAME OVER SCREEN */
+#gameOverScreen {
+  background: rgba(42, 0, 19, 0.9); /* Transparent red-black overlay */
+  border: 2px dashed #FF94B2;   /* Dashed border for warning effect */
+  padding: 1rem;  /* Inner spacing */
+  text-align: center;  /* Centered text */
+  margin-top: 1rem;  /* Space above this section */
+}
+
+.big-alert {
+  color: #F24455;  /* Bright red alert text */
+  font-size: 1.1rem;  /* Slightly larger for emphasis */
+  margin-bottom: 1rem; /* Space under the alert */
+  animation: glitch 0.6s infinite; /* Glitch animation for warning effect */
+}
+
+#restartBtn {
+  background: linear-gradient(90deg, #FF94B2, #E5203A); /* Gradient button color */
+  border: none; /* No border */
+  color: #1a0d11; /* Dark text for contrast */
+  padding: 0.6rem 1.2rem;  /* Button padding */
+  font-family: 'Share Tech Mono', monospace; /* Matching font */
+  cursor: pointer; /* Pointer on hover */
+  box-shadow: 0 0 10px #FF94B2; /* Glow around the button */
+  border-radius: 4px;  /* Rounded edges */
+  text-transform: uppercase; /* All caps text */
+  font-size: 0.75rem; /* Small button text */
+}
+
+#restartBtn:hover {
+  background: linear-gradient(90deg, #E5203A, #FF94B2); /* Reversed gradient on hover */
+  box-shadow: 0 0 15px #F24455;  /* Stronger glow on hover */
+}
+
+/* FOOTER */
+.terminal-footer {
+  margin-top: 3rem;  /* Space above footer */
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: #75192e; /* Dimmed red for less focus */
+  font-weight: bolder;
+  text-align: center;  /* Centered footer text */
+}
+
+/* HIDDEN UTILITY */
+.hidden {
+  display: none; /* Completely hides the element */
+}
+
+/* FLICKER ANIMATION */
+@keyframes flicker {
+  0%, 100% { opacity: 1; } /* Full brightness at start and end */
+  50% { opacity: 0.6; } /* Dimmed in middle */
+}
+
+/* GLITCH ANIMATION */
+@keyframes glitch {
+  0% { text-shadow: 2px 0 #F24455, -2px 0 #FF94B2; } /* Red and pink split shadow */
+  50% { text-shadow: -2px 0 #F24455, 2px 0 #FF94B2; } /* Switch direction */
+  100% { text-shadow: none; }  /* Reset to normal */
+}
+

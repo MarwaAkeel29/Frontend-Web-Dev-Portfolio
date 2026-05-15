@@ -1,0 +1,173 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Root element of the HTML document; 'en' specifies English language -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for full character support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on all devices -->
+    <title>Study Planner</title> <!-- Sets the page title in the browser tab -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkRp35IwMk3yBTO9apR9bzsk-I6DtE5soGrQ&s" type="image/png"> <!-- Favicon (icon on browser tab) -->
+
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts import for futuristic font style -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container"> <!-- Master wrapper for layout control -->
+
+        <!-- Sidebar Navigation Menu -->
+        <nav class="sidebar"> <!-- Navigation element used for side menu -->
+            <h2>Study Planner</h2> <!-- Sidebar title -->
+            <ul>
+                <!-- Internal links for navigating sections of the page -->
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#tasks">Upcoming Tasks</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main> <!-- Primary content area -->
+
+            <!-- Header Section -->
+            <header> <!-- Page header including the title and search -->
+                <h1>Web Development Study Plan</h1> <!-- Main heading -->
+                <input class="input" type="text" placeholder="Search..."> <!-- Search bar for user convenience -->
+            </header>
+
+            <!-- Widgets Row: Daily Focus & Checklist -->
+            <section class="widgets-grid"> <!-- Flex/grid container for widgets -->
+
+                <!-- Daily Focus Panel -->
+                <div class="daily-focus">
+                    <h3>🎯 Daily Focus</h3> <!-- Sub-heading -->
+                    <p>1. Complete your JavaScript To-Do app today!</p> <!-- Focused task -->
+                    <p>2. Refactor the login component for better accessibility.</p>
+                    <div class="focus-progress-bar"> <!-- Background bar -->
+                        <div class="focus-progress"></div> <!-- Filled part representing progress -->
+                    </div>
+                </div>
+
+                <!-- Quick Checklist Panel -->
+                <div class="checklist-widget">
+                    <h3>✅ Quick Checklist</h3>
+                    <ul>
+                        <!-- Checkbox items to track progress -->
+                        <li><input type="checkbox"> Review HTML notes</li>
+                        <li><input type="checkbox"> Watch Flexbox tutorial</li>
+                        <li><input type="checkbox"> Push changes to GitHub</li>
+                        <li><input type="checkbox"> Take a 5-min break ☕</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Current Study Items Section -->
+            <section class="study-items">
+                <h2>Current Study Items</h2>
+                <div class="grid"> <!-- Grid layout for boxes -->
+                    
+                    <!-- Each box is one topic/item -->
+                    <div class="box">
+                        <img src="Images/HTML-Basics.avif" alt="HTML Basics"> <!-- Visual icon -->
+                        <h3>HTML Basics</h3>
+                        <p class="description">Lay the foundation with tags, structure, and semantic elements. Your site’s skeleton!</p>
+                    </div>
+
+                    <!-- Repeatable structured content for each item -->
+                    <div class="box">
+                        <img src="Images/CSS.jpg" alt="CSS Fundamentals">
+                        <h3>CSS Fundamentals</h3>
+                        <p class="description">Make things pretty—colors, layout, fonts, and slick hover effects start here!</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="Images/JavaScript.webp" alt="JavaScript Intro">
+                        <h3>JavaScript Intro</h3>
+                        <p class="description">Bring your page to life! Logic, interactivity, and real-time magic with JS basics.</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="Images/Reponsive-Design.avif" alt="Responsive Design">
+                        <h3>Responsive Design</h3>
+                        <p class="description">Make it fit every screen using flexible layouts and media queries. Bye scrollbars!</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="Images/GitHub.webp" alt="Git & GitHub">
+                        <h3>GitHub</h3>
+                        <p class="description">Track changes, collaborate, and push code like a dev ninja using Git & GitHub.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upcoming Tasks with Progress Tracking -->
+            <section class="upcoming-tasks">
+                <h2>Upcoming Tasks</h2>
+                <div class="grid"> <!-- Same grid layout, but different styling -->
+
+                    <!-- Task with progress and image icon -->
+                    <div class="box1">
+                        <p>Watch JavaScript Tutorial (30 min)</p>
+                        <img src="Images/JavaScript Tutorial.webp">
+                        <div class="progress-container">
+                            <div class="progressbar-80"></div>
+                        </div>
+                    </div>
+
+                    <div class="box1">
+                        <p>Code: To-Do List App</p>
+                        <img src="Images/Code To-Do.avif">
+                        <div class="progress-container">
+                            <div class="progressbar-50"></div>
+                        </div>
+                    </div>
+
+                    <div class="box1">
+                        <p>Create GitHub Repo</p>
+                        <img src="Images/GitHub Repo.webp">
+                        <div class="progress-container">
+                            <div class="progressbar-100"></div>
+                        </div>
+                    </div>
+
+                    <div class="box1">
+                        <p>Test Responsiveness</p>
+                        <img src="Images/Website Responsiveness.jpg">
+                        <div class="progress-container">
+                            <div class="progressbar-30"></div>
+                        </div>
+                    </div>
+
+                    <div class="box1">
+                        <p>Submit Portfolio Project</p>
+                        <img src="Images/Portfolio Project.webp">
+                        <div class="progress-container">
+                            <div class="progressbar-60"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Area -->
+        <footer class="site-footer">
+            <!-- Copyright -->
+            <p>&copy; 2025 Creative Computing • Web Development Study Planner</p>
+
+            <!-- Designer Credit / Tagline -->
+            <p>Code. Learn. Repeat | Designed by Marwa</p>
+        </footer>
+
+    </div> <!-- End container -->
+</body>
+</html>
+
+
+
+  
+
+   

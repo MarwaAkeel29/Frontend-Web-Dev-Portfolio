@@ -1,0 +1,330 @@
+<!DOCTYPE html> <!-- Declares the document type and HTML version -->
+<html lang="en"> <!-- Root element of the HTML document -->
+<head> <!-- Metadata and links go inside the head -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design on mobile -->
+    <title>HTML & CSS Quick-Reference Guide</title> <!-- Page title on browser tab -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDemoRMVd9vCBXShRNUPJnQe-H5OIK-aruwZo8rmljrS_RS6M7Jg0-DzDsBZ7yo6qo3aY&usqp=CAU" type="image/png"> <!-- Favicon (icon on browser tab) -->
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+</head>
+
+<body> <!-- Visible page content starts -->
+
+    <header> <!-- Header of the page -->
+        <h1>Essential HTML & CSS: Your Ultimate Cheat Sheet</h1> <!-- Main heading -->
+        <p class="Description"> <!-- Paragraph with a class -->
+            Explore this user-friendly guide covering essential HTML tags and CSS properties, designed to help beginners and experienced developers alike with concise explanations and practical demonstrations. 
+            HTML and CSS are the dynamic duo behind every website you see online. HTML lays the foundation, structuring text, links, lists, and buttons, while CSS steps in to style it all—adding colors, fonts, layouts, and visual appeal. HTML builds the content, and CSS makes it shine!
+        </p>
+    </header>
+
+    <section class="html"> <!-- Section about HTML -->
+        <h2><strong> What is HTML? </strong></h2> <!-- Subheading -->
+        <p>HTML tags are the building blocks of every webpage! They define content, structure, and functionality—whether it’s text, links, images, or lists. Mastering these essential tags is the first step to creating stunning and interactive web pages. Lets dive into some essential HTML tags and how they can be used</p>
+
+        <section class="html_tags"> <!-- Nested section for HTML structure -->
+            <h3>1. Basic Structure of an HTML Page</h3> <!-- Level 3 heading -->
+
+            <article> <!-- Individual topic block -->
+                <h4>(a) HTML Document Structure</h4> <!-- Subheading -->
+                <p>The backbone of every webpage! These essential tags lay the groundwork, organizing content and ensuring everything runs smoothly behind the scenes.</p>
+
+                <ul> <!-- Unordered list of tags --> 
+                    <li>&lt;!DOCTYPE html&gt; - Declares HTML version</li>
+                    <li>&lt;html&gt; - Root element</li>
+                    <li>&lt;head&gt; - Contains meta and link tags</li>
+                    <li>&lt;title&gt; - Sets the browser tab title</li>
+                    <li>&lt;body&gt; - Visible page content</li>
+                </ul>
+
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    Content goes here!
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code>
+                </pre>
+            </article>
+        </section>
+
+        <section class="text_formatting"> <!-- Text formatting tags -->
+            <h3>2. Text Formatting Tags</h3> <!-- Level 3 heading -->
+
+            <article>
+                <h4>(a) Heading Tag (&lt;h1&gt; - &lt;h6&gt;)</h4>
+                <p>The heading tags define headings on a webpage with &lt;h1&gt; being the most important and &lt;h6&gt; the least. They help structure content, improve readability. As you can see below, the size will reduce accordingly</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code class="code-headings">
+                        <span>&lt;h1&gt;Main Heading&lt;/h1&gt;</span>
+                        <span>&lt;h2&gt;Subheading&lt;/h2&gt;</span>
+                        <span>&lt;h3&gt;Section Title&lt;/h3&gt;</span>
+                        <span>&lt;h4&gt;Subsection Title&lt;/h4&gt;</span>
+                        <span>&lt;h5&gt;Smaller Heading&lt;/h5&gt;</span>
+                        <span>&lt;h6&gt;Least Important Heading&lt;/h6&gt;</span>
+                    </code>
+                </pre>
+            </article>
+
+            <article>
+                <h4>(b) Paragraph Tag &lt;p&gt;</h4> <!-- Subheading -->
+                <p>The &lt;p&gt; tag defines a block of text as a paragraph in an HTML document. It helps organize content, making it easier to read and understand by adding spacing between text sections.</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+&lt;p&gt;This is an example of a paragraph.&lt;/p&gt;
+                    </code>
+                </pre>
+            </article>
+
+            <article>
+                <h4>(c) Text Styling Tags</h4> <!-- Subheading -->
+                <p>These tags help to emphasize or modify text appearance.</p> <!-- Paragrapgh of text-->
+                <ul class="text-style">
+                    <li>&lt;b&gt; -  It makes text bold for emphasis but doesn't add importance.</li>
+                    <li>&lt;strong&gt; - Highlights important text with extra meaning (used by screen readers).</li>
+                    <li>&lt;i&gt; - Italicizes text for emphasis, thoughts, or foreign words.</li>
+                    <li>&lt;u&gt; - Draws attention to text, often used for misspellings or special emphasis.</li>
+                    <li>&lt;mark&gt; - Highlights text in bright yellow (by default) to make it stand out.</li>
+                </ul>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+                        &lt;b&gt; <b>This is a bold Text</b> &lt;/b&gt;  
+                        &lt;strong&gt; <strong> This is an Important Text </strong> &lt;/strong&gt; 
+                        &lt;i&gt; <i>This Text is in Italics </i> &lt;/i&gt;   
+                        &lt;u&gt; <u>This Text is Underlined </u> &lt;/u&gt; 
+                        &lt;mark&gt; <mark>This Text is Highlighted </mark> &lt;/mark&gt;
+                    </code>
+                </pre>
+            </article>
+        </section>
+
+        <section class="links_media"> <!-- Links and media section -->
+            <h3>3. Links & Media</h3> <!-- Subheading -->
+
+            <article>
+                <h4>(a) Hyperlink Tag</h4> <!-- Subheading -->
+                <p>The &lt;a&gt; tag is your gateway to seamless navigation! It creates clickable links that connect webpages, jump to sections, or direct users to external resources. Just add the <code>href</code> attribute to define the destination.
+                <a href= "https://i.pinimg.com/736x/8f/a0/73/8fa0732d135add9371a718f1d246b628.jpg" target="_blank">Need a moment of peace? Click here✨</a>. This is how you can create Hyperlinks. Below is an example of a Hyperlink</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+&lt;a href="https://www.nuture.com"&gt;Take a walk through nature! 🌿&lt;/a&gt;
+                    </code>
+                </pre>
+            </article>
+
+            <article>
+                <h4>(b) Image Tag &lt;img&gt;</h4> <!-- Subheading -->
+                <p>They say a picture is worth a thousand words—well, the &lt;img&gt; tag brings those pictures to life on your webpage! Just set the <code>src</code> attribute to point to an image file. You can use the &lt;img&gt; tag inside an &lt;a&gt; tag to make the image clickable. Check out the &lt;img&gt; tag example given below,</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+&lt;img src="https://www.example.com/image.jpg" alt="Image Description"&gt;
+                    </code>
+                </pre>
+            </article>
+
+            <article>
+                <h4>(c) Iframe Tag &lt;iframe&gt;</h4> <!-- Subheading -->
+                <p>The &lt;iframe&gt; tag is like a digital window that lets you embed external content directly onto your webpage. 
+                    Whether it's a YouTube video, an interactive map, or another webpage, this tag seamlessly integrates media and 
+                    resources from other sites. Check out the &lt;iframe&gt; tag example given below:</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+&lt;iframe width="560" height="315" 
+src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        allowfullscreen&gt;
+                    </code>
+                </pre>
+                <p>  <!--paragrapgh-->
+                    And guess what? The magic of iframe is right in front of you! The interactive code editor below is embedded using an iframe, allowing you to experiment with HTML, CSS, and JavaScript without leaving the page.
+                    So why not give it a shot? Try out the tags we've explored so far and bring your creativity to life—right here, right now!
+                </p>
+                <iframe class="iframe" 
+                    src="https://onecompiler.com/html"
+                    title="Code compiler"
+                    allowfullscreen>
+                </iframe>
+            </article>
+        </section>
+
+        <section class="lists_forms"> <!-- Lists and forms -->
+            <h3>4. Lists and Form tags</h3> <!-- Subheading -->
+
+            <article>
+                <h4>(a) List Tags: Ordered & Unordered Lists</h4> <!-- Subheading -->
+                <p>Lists bring order to chaos, turning scattered thoughts into neatly arranged points. Whether you're counting down a top 10, outlining steps in a process, or simply grouping related items, list tags have your back! Ordered lists (&lt;ol&gt;) keep things sequential, while unordered lists (&lt;ul&gt;) let you present items without a strict order. Perfect for recipes, to-do lists, or even treasure maps</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+&lt;ul&gt;  &lt;!-- Unordered List --&gt;
+    &lt;li&gt;Bali - Tropical beaches and stunning sunsets&lt;/li&gt;
+    &lt;li&gt;Swiss Alps&lt;/li&gt;
+    &lt;li&gt;New York City&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;  &lt;!-- Ordered List --&gt;
+    &lt;li&gt;Wake up & stretch&lt;/li&gt;
+    &lt;li&gt;Drink a glass of water&lt;/li&gt;
+    &lt;li&gt;Eat a healthy breakfast&lt;/li&gt;
+    &lt;li&gt;Plan the day ahead&lt;/li&gt;
+&lt;/ol&gt;
+                    </code>
+                </pre>
+            </article>
+
+            <article>
+                <h4>(b) Forms and Input: The Digital Conversation Starters</h4> <!-- Subheading -->
+                <p>Forms and input fields are like digital doorways, inviting users to interact, share, and engage. Whether it's signing up for a newsletter, searching for a hidden treasure, or submitting a top-secret message, these tags turn passive browsing into an interactive experience. With text boxes, buttons, checkboxes, and dropdowns, forms give users the power to communicate with your site</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+                    </code>
+                </pre>
+                <p>See those Name and Email fields? They're more than just empty boxes—they're your digital handshake! Give it a try and enter your details. Whether it's a friendly hello or a secret mission sign-up, forms turn clicks into connections</p>
+                <form class="form"> <!-- Simple form collecting user's name and email with a submit button -->
+                    <label for="name"> Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email"> Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </section>
+    </section>
+
+    <section class="CSS"> <!-- Section about CSS -->
+        <h2>What is CSS?</h2> <!-- Subheading -->
+        <p>CSS styles your HTML: colors, fonts, spacing, layout, animations.</p>
+
+        <section class="color"> <!-- Section demonstrating color properties -->
+            <article>
+                <h3>5. Painting the Web</h3> <!-- Level 3 heading -->
+                <h4> Color & Background </h4> <!-- Subheading -->
+                <p>CSS is your digital paintbrush, turning dull pages into vibrant masterpieces. Whether you're crafting a serene pastel paradise or a bold, high-contrast statement, color and background properties set the tone, mood, and personality of your webpage with just a few strokes of code</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+p {
+    color: crimson; /* Text color */
+    background-color: lightgoldenrodyellow; /* Background */
+}
+                    </code>
+                </pre>
+                <p class="color-ex">Crimson colored text with light golden yellow background colour</p> <!-- Paragrapgh of text with container-->
+            </article>
+        </section>
+
+        <section class="font"> <!-- Section demonstrating fonts -->
+            <article>
+                <h3>6. The Web’s Handwriting </h3> <!-- Level 3 heading -->
+                <h4> Font Styling </h4>
+                <p>Fonts are the voice of your webpage, speaking volumes before a single word is read. Whether whispering elegance, shouting bold statements, font properties let you shape how your content is perceived and experienced</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+p {
+    font-family: "Courier New", monospace; /* Choose a font */
+    font-size: 20px; /* Adjust text size */
+    font-weight: bold; /* Make it stand out */
+    font-style: italic; /* Add some flair */
+}
+                    </code>
+                </pre>
+                <p class="font-ex">This is a paragraph with font styling including font family, size, weight, style</p>
+            </article>
+        </section>
+
+        <section class="borders"> <!-- Section demonstrating border effects -->
+            <article>
+                <h3>7. Borders & Shadows</h3> <!-- Level 3 heading -->
+                <h4> Borders & Shadows </h4> <!-- Subheading -->
+                <p>Borders and shadows add depth and emphasis to your webpage, helping elements stand out. Whether outlining sections for clarity or adding subtle shadows for a layered effect, these properties enhance both structure and visual appeal</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+border: 3px solid #9a86fd;  /* neon purple border */
+border-radius: 10px; /* Smooth, rounded corners */
+box-shadow: 5px 5px 10px rgb(67, 55, 98); /* Adds depth */
+                    </code>
+                </pre>
+                <p class="borders-ex">This is a box with borders and shadows</p>
+            </article>
+        </section>
+
+        <section class="layout"> <!-- Section demonstrating layout -->
+            <article>
+                <h3>8. The Art of Arrangement </h3> <!-- Level 3 heading -->
+                <h4> Layout & Spacing</h4> <!-- Subheading -->
+                <p>Spacing properties like margin and padding ensure your content is well-balanced, preventing it from feeling too cramped or too spread out. They create a sense of organization and readability, making your layout more visually appealing.</p>
+                <pre>
+                    <code> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+margin: 20px; /* Space outside an element */
+padding: 15px; /* Space inside an element */
+display: flex; /* Aligns items neatly */
+justify-content: center; /* Centers items horizontally */
+                    </code>
+                </pre>
+                <p class="layout-ex">This is a paragraph with margin, padding, display and justify-content</p>
+            </article>
+        </section>
+
+        <section class="transition"> <!-- Section demonstrating transition effects -->
+            <article>
+                <h3>8. Bringing Pages to Life </h3> <!-- Level 3 heading -->
+                <h4> Transitions & Animations</h4> <!-- Subheading -->
+                <p>Animation and transition properties bring your webpage to life by making elements move, fade, or transform smoothly. They enhance user experience by adding dynamic interactions that feel natural and engaging.</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+.button {
+    transition: all 0.3s ease-in-out; /* Smooth effect when hovering */
+}
+.button:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+                    </code>
+                </pre>
+
+                <p>
+                    Remember the Name field you tried earlier? This is the same input field, but now it includes transition and transform CSS properties.
+                </p>
+
+                <form class="form1"> <!-- Simple form collecting user's name with a submit button -->
+                    <label for="name"> Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </section>
+
+        <section class="clipping-masking"> <!-- Section demonstrating clipping and masking effects -->
+            <article>
+                <h3>10. Shaping Creativity</h3> <!-- Level 3 heading -->
+                <h4>Clipping & Masking</h4> <!-- Subheading -->
+                <p>Clip and mask properties allow you to create unique shapes and visual effects, making elements stand out beyond traditional rectangles.</p>
+                <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
+                    <code>
+.clip-box {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+.mask-box {
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+}
+                    </code>
+                </pre>
+                <h5>Clipping Example:</h5> <!-- Subheading -->
+                <div class="clip-box">Clipped Element</div> <!-- Clipped content container -->
+
+                <h5>Masking Example:</h5> <!-- Subheading -->
+                <div class="mask-box">Masked Element</div> <!-- Masked content container -->
+
+                <p class="clip-mask-ex">This section demonstrates how to clip an element into a triangle and apply a circular mask.</p> <!-- Paragrapgh of text with container-->
+            </article>
+        </section>
+    </section>
+</body>
+</html>
+

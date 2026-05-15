@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Declares the HTML5 document type -->
+<html lang="en"> <!-- Root element with language set to English -->
+<head>
+  <meta charset="UTF-8" /> <!-- Character encoding set to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsive layout on mobile -->
+  <title>RGB Hacker Mode</title> <!-- Sets the page title in browser tab -->
+  <link rel="icon" href="https://t3.ftcdn.net/jpg/07/29/32/28/360_F_729322858_Dt8T32RVznFQceeAhDIcBpkWHmmfZ6MU.jpg" type="image/png"> <!-- Favicon (icon on browser tab) -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"> <!-- Imports retro-style font -->
+  <link rel="stylesheet" href="style.css" /> <!-- Links to external CSS file -->
+</head>
+
+<body> <!-- Main body of the webpage -->
+
+  <div class="hacker-frame"> <!-- Styled container for the entire interface -->
+
+    <header class="terminal-header"> <!-- Header with terminal-style title -->
+      <h1>&gt; INITIATING RGB DECRYPTION PROTOCOL</h1> <!-- Main heading text -->
+      <p class="subline">Access required: Visual Pattern Recognition</p> <!-- Subtitle under heading -->
+    </header>
+
+    <main class="game-panel"> <!-- Main interactive game area -->
+
+      <div class="rgb-display"> <!-- Section showing the target RGB code -->
+        <p>TARGET RGB CODE:</p> <!-- Label for the RGB code -->
+        <span id="rgbCode">rgb(???, ???, ???)</span> <!-- Placeholder for the actual RGB code -->
+      </div>
+
+      <section class="color-options"> <!-- Area where color options appear -->
+        <div class="color-box" data-choice="1"></div> <!-- Color box option 1 -->
+        <div class="color-box" data-choice="2"></div> <!-- Color box option 2 -->
+        <div class="color-box" data-choice="3"></div> <!-- Color box option 3 -->
+      </section>
+
+      <div class="system-output"> <!-- Displays system messages and stats -->
+        <p id="messageOutput">Awaiting input...</p> <!-- Dynamic message text -->
+        <p id="traceLevel">Trace Level: 0%</p> <!-- Displays current trace level -->
+        <p id="score">Access Score: 00</p> <!-- Displays current score -->
+      </div>
+
+      <div id="gameOverScreen" class="hidden"> <!-- Hidden game over screen -->
+        <p class="big-alert">⚠ SYSTEM BREACH DETECTED ⚠</p> <!-- Alert message when game ends -->
+        <button id="restartBtn">Restart Hack</button> <!-- Button to restart the game -->
+      </div>
+
+    </main>
+
+    <footer class="terminal-footer"> <!-- Footer with system log message -->
+      <p>&gt;&gt; SYSTEM LOGGING ENABLED | RGB Hacker Mode | v1.0</p> <!-- Footer text -->
+    </footer>
+  </div>
+
+  <script src="index.js"></script> <!-- Links to the JavaScript file -->
+
+</body>
+</html>
+

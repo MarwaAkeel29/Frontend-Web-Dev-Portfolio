@@ -1,0 +1,238 @@
+/* ------------------------ */
+/* Sidebar Navigation and body (Mandatory Format) */
+/* ------------------------ */
+body {
+    font-family: 'Almendra', serif; /* Adds a medieval-inspired serif font for a fantasy vibe */
+    background: linear-gradient(#ffe0b2);
+  }
+
+.sidenav {
+  height: 100%; /* Makes the sidebar span full height */
+  width: 220px; /* Sets sidebar width */
+  background-color: #1a1a2e; /* Deep indigo-blue, matches dark Viking tones */
+  border-right: 7px solid #db8b13f9; /* Fiery orange dragon-themed border */
+  border-left: 7px solid #db8b13f9; /* Mirrored fiery border for symmetry */
+  position: fixed; /* Keeps the sidebar in place while scrolling */
+  padding-top: 20px; /* Spacing at the top */
+  transition: 0.3s; /* Smooth sidebar animation */
+  top: 0;
+  left: 0;
+}
+
+.sidenav a {
+    display: block; /* Each link on its own line */
+    font-size: 23px; /* Large readable nav text */
+    font-weight: bold; /* Bold for prominence */
+    color: white; /* Contrasts nicely against dark sidebar */
+    padding: 12px 15px; /* Comfortable padding */
+    text-decoration: none; /* No underline */
+    transition: 0.2s; /* Quick hover response */
+  }
+
+.sidenav a:hover {
+    background-color: #db8b13f9; /* Glowing hover inspired by dragon fire */
+    color: white; /* Text stays readable */
+  }
+
+.sidenav a.active {
+    background-color: #b3761bf9; /* Fiery color */
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #db8b13f9;
+}
+
+/* ------------------------ */
+/* Content Formatting (All Pages) */
+/* ------------------------ */
+.main-content {
+    margin-left: 210px; /* Adjust to match sidebar width */
+    padding: 20px;
+}
+
+h2, h3 {
+    font-family: 'Uncial Antiqua', cursive; /* Consistent theme for subheadings */
+    font-size: 1.7rem / 1.2rem; /* Slightly smaller sizes for hierarchy */
+    color: #db8b13f9; /* Maintains dragon color theme */
+  }
+
+.overview-flex{
+    margin-left: 100px; /* margin adjustments */
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.key-flex,.cast, .characters {
+    margin-top: 50px; /* margin adjustments */
+    margin-left: 300px;
+    margin-right: 90px;
+}
+
+.overview-flex,
+.key-flex,
+.characters,
+.cast {
+    display: flex; /* Flexible layout */
+    flex-direction: column; /* Stack children vertically */
+    border: 10px solid#db8b13f9; /* Fiery border */
+    background-color: #1a1a2e; /* Dark dragon-skin background */
+    border-radius: 50px; /* Soft, rounded panels */
+    align-items: center; /* Center children horizontally */
+    text-align: center;
+}
+
+.overview-text, .additional-info {
+    color: white; /* Readable on dark bg */
+    max-width: 600px; /* Prevents too-wide lines */
+  }
+
+.overview-text blockquote {
+    font-style: italic; /* Quotes feel more narrative */
+    font-size: 1.3rem; /* Slightly larger for emphasis */
+    color: aliceblue; /* Light and readable */
+    margin-bottom: 10px; /* Spacing below */
+  }
+
+.button {
+    display: inline-block;
+    background-color:#1a1a2e; /* Matches sidebar and main theme */
+    border-radius: 25px;  /* Soft pill-shaped button */
+    font-weight: bold;
+    color: aliceblue;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: 0.4; /* Smooth hover */
+}
+
+.button:hover {
+    background-color: #db8b13f9; /* Glows on hover */
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between items */
+    width: 100%;
+}
+
+.character-box {
+    background-color: #31313f; /* Dark stone look */
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 4px 4px 10px #db8b13f9; /* Fiery shadow effect */
+    margin-bottom: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.character-box h3 {
+    margin-bottom: 5px;
+    color: #db8b13f9; /* Fiery Dragon-Like Color */
+}
+
+.character-box p {
+    font-weight: normal;
+}
+
+.cast-grid, .crew-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between boxes */
+    justify-content: center; /* Ensures everything is centered */
+    align-items: center;
+    width: 70%;
+    max-width: 900px; /* Prevents excessive stretching */
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.cast-item, .crew-item {
+    background-color: #31313f; /* Matches character boxes for consistency */
+    color: white;
+    padding: 19px; /* Nice amount of space for names/titles */
+    border-radius: 10px; /* Slight rounding for modern-fantasy UI */
+    text-align: center; /* Keeps name/role centered */
+    box-shadow: 0px 4px 8px #db8b13f9; /* Subtle fire-glow on hover-ready elements */
+    justify-content: center; /* Centers content within grid cell */
+    /* Represents individual cast/crew member in grid layout */
+  }
+
+.character-name, .crew-role{
+    font-style: italic;
+    color: #ddd; /* Light gray for subtle emphasis */
+}
+
+.crew-item:hover,
+.cast-item:hover,
+.character-box:hover,
+.review-card:hover {
+    background-color: #1a1a2e; /* Dark hover effect for cohesion */
+}
+
+.review-container {
+    border: 5px solid #db8b13f9; /* Same fire-orange border to visually link with other elements */
+    background-color: #1a1a2e; /* Dark background for unified visual aesthetic */
+    border-radius: 30px; /* Rounded edges give a soft, scrollable card view */
+    margin-top: 170px;
+    margin-left: 280px;
+    margin-right: 30px;
+    align-items: center; /* Vertically centers inner review cards */
+    text-align: center; /* Text inside cards is centered */
+    display: flex; /* Flex layout to line up cards horizontally */
+    overflow-x: auto; /* Horizontal scroll for responsive, scrollable reviews */
+    gap: 20px; /* Space between each review card */
+    padding: 50px; /* Generous inner padding for elegant spacing */
+    scroll-snap-type: none; /* Could enable snap scroll if you want more carousel-style later */
+  }
+
+.review-container::-webkit-scrollbar {
+    display: none;  /* Hide scrollbar for cleaner look */
+}
+
+.review-card {
+    height: 100px; /* Fixed height  */
+    min-width: 300px; /* Each card must be at least this wide to maintain readability */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #31313f; /* Same stone-texture background as other content blocks */
+    color: white;
+    border-radius: 40px; /* Circular feel for more storybook-style bubbles */
+    box-shadow: 0px 5px 10px #db8b13f9;  /* Ember glow like magical relic cards */
+}
+
+/* Shared fiery glow style */
+.character-box,
+.cast-item,
+.crew-item,
+.review-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth float + glow */
+}
+
+/* Hover effect: float and intense glow */
+.character-box:hover,
+.cast-item:hover,
+.crew-item:hover,
+.review-card:hover {
+    animation: flicker 2s infinite; /* Flickering fire effect */
+    transform: translateY(-8px); /* Slight float up */
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.8), 0 0 30px rgba(255, 70, 0, 0.6); /* Glowing fire aura */
+}
+
+/* Flickering fire animation */
+@keyframes flicker {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 140, 0, 0.6); /* Subtle fire-glow */
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(255, 140, 0, 0.9); /* Subtle fire-glow */
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 140, 0, 0.6); /* Subtle fire-glow */
+    }
+}
+
+
